@@ -1,0 +1,18 @@
+C:\Users\phs\git\arkwithsite\arkwithsite>python manage.py collectstatic
+Initializing LOGGING in settings.py - if you see this more than once use 'runserver --noreload'
+
+You have requested to collect static files at the destination
+location as specified in your settings:
+
+    C:\Users\phs\git\arkwithsite\arkwithsite\static
+
+This will overwrite existing files!
+Are you sure you want to do this?
+
+Type 'yes' to continue, or 'no' to cancel: yes
+Copying 'C:\Users\phs\git\arkwithsite\arkwithsite\chatapp\static\chatapp\js\uiForChattingCatechismClient.js'
+Copying 'C:\Users\phs\git\arkwithsite\arkwithsite\chatapp\static\chatapp\js\uiForChattingClient.js'
+
+2 static files copied to 'C:\Users\phs\git\arkwithsite\arkwithsite\static', 283 unmodified.
+
+C:\Users\phs\git\arkwithsite\arkwithsite>

@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\phs\\git\\arkwithsite\\arkwithsite\\chatapp\\ArkChatFramework\\ArkNLU\\NLUModel\\model_catechism_kr.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\phs\\git\\arkwithsite\\arkwithsite\\chatapp\\ArkChatFramework\\ArkNLU\\NLUModel\\model_catechism_kr.tflearn"

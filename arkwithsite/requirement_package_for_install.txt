@@ -1,0 +1,24 @@
+# Install Guiding
+# Python 3.6.2 :: Anaconda, Inc.
+Django               2.0.2
+requests             2.20.0
+bs4                  0.0.1
+nltk                 3.4.5
+
+# JPype 는 휠 파일 이용하여 설치
+JPype1-0.7.1-cp36-cp36m-win_amd64.whl
+
+konlpy               0.4.3
+
+# tensorflow는 휠 파일 이용 설치
+https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.2.0-cp36-cp36m-win_amd64.whl
+
+flearn              0.3.2
+
+# NLTK 설치하고 Data 다운로드
+nltk.download()
+
+
+C:\Users\saint\AppData\Roaming\nltk_data
+~\arkwithsite\chatapp\ArkChatFramework\ArkChat\ 디렉토리에 있는 travel_kr.fcfg 파일을 
+C:\Users\saint\AppData\Roaming\nltk_data\grammars\ 디렉토리로 복사

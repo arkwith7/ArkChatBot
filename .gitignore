@@ -1,0 +1,4 @@
+# Environments
+.chatbot_env
+chatbot_env/
+chatbot_env.bak/

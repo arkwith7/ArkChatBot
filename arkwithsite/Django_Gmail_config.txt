@@ -1,0 +1,40 @@
+
+settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = 'username@gmail.com'
+EMAIL_HOST_PASSWORD = 'your-gmail-password'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+1, "낮은 보안 응용 프로그램 권한"을 사용하도록 설정
+https : //www.google.com/settin ...으로 이동하여 사용하도록 설정합니다.
+2. 휴먼 - 머신 검증 잠금을 해제하십시오.
+https : //accounts.google.com/b ...로 이동 한 다음 계속을 클릭하십시오.
+메일을 보낼 수 있는지 확인하십시오.
+
+This works for me:
+
+settings.py
+
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_PASSWORD = 'test'
+EMAIL_HOST_USER = 'test@gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+Unlock Captcha: https://accounts.google.com/DisplayUnlockCaptcha
+
+views.py
+from django.core.mail import EmailMessage
+email = EmailMessage(
+    'subject_message',
+    'content_message',
+    'sender smtp gmail' +'<sender@gmail.com>',
+    ['receiver@gmail.com'],
+    headers = {'Reply-To': 'contact_email@gmail.com' }
+)
+email.send()

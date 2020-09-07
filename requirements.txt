@@ -1,0 +1,23 @@
+# Install Guiding
+# Python 3.6.2 :: Anaconda, Inc.
+
+django==2.0.2
+requests==2.20.0
+bs4==0.0.1
+nltk==3.4.5
+
+tflearn==0.3.2
+
+numpy 
+matplotlib 
+pandas 
+pydotplus 
+h5py 
+scikit-learn
+pydot
+scipy 
+libpython
+ujson
+tqdm
+wordcloud
+gensim

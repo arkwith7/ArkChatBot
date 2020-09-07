@@ -1,0 +1,1 @@
+.\chat_env\Scripts\activate.bat

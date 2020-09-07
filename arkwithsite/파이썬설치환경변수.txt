@@ -1,0 +1,21 @@
+파이썬 설치 및 환경변수 설정
+Posted on 2016년 7월 1일
+
+리눅스의 경우
+1) 환경변수 PATH에 다음을 추가한다.
+~/.local/bin
+
+2) 환경변수 PYTHONPATH 를 추가하고 유저파이썬 라이브러리 경로를 적는다.
+ex) export PYTHONPATH=~/python-cipher-hack/lib
+
+윈도우의 경우
+-> 유저 환경변수가 아닌 시스템 환경 변수에 추가한다!
+
+1) 환경변수 PATH에 다음을 추가한다.
+C:\Python34;C:\Python34\Scripts;
+
+2) 환경변수 PYTHONPATH 에 기본라이브러리 경로 및 유저 라이브러리 경로를 추가한다.
+C:\Python34\Lib; [유저워크스페이스]
+
+3) 환경변수 PYTHONIOENCODING 을 추가하고 UTF-8 을 인코딩 값으로 지정한다.
+utf-8

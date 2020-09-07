@@ -1,0 +1,88 @@
+{% extends "chatapp/base_popup_contents_kr.html" %}
+{% load staticfiles %}
+
+{% block title %}Chatting Westminster Shorter Catechism{% endblock %}
+
+{% block content %}
+
+    {% include "chatapp/chat-panel.html" %}
+
+{% endblock content %}
+
+
+{% block javascript %}
+  <script>
+  $( function() {
+    var availableTags = [
+      "안녕하세요",
+      "안녕히 계셔요.",
+      "감사합니다",
+      "소요리 문답이란",
+      "웨스트민스터 소요리문답이란 무엇일까요?",
+      "하나님에 대하여",
+      "전능자",
+      "여호와",
+      "하나님과 인간",
+      "하나님의 말씀",
+      "하나님의 속성",
+      "하나님의 창조",
+      "1. 인생의 목적",
+      "성경",
+      "신구약",
+      "2. 신구약 성경",
+      "3. 성경의 가르침",
+      "원죄와 타락한 인간에 대하여",
+      "사람",
+      "인류의 죄",
+      "원죄",
+      "13. 아담의 타락",
+      "14. 죄의 정의",
+      "타락한 인간",
+      "예수그리스도",
+      "구원자 예수님",
+      "예수님 직분",
+      "성자 예수님",
+      "성령 예수님",
+      "부르심",
+      "거룩하게 하심",
+      "신앙생활에 대하여",
+      "교회에 다니는 사람",
+      "십계명에 대하여",
+      "십계명 서문",
+      "율법과 죄",
+      "회개와 구원에 대하여",
+      "성례",
+      "세례",
+      "성찬",
+      "주기도문에 대하여",
+      "주님이 가르쳐주신 기도",
+      "기도",
+      "1. 사람의 제일 되는 목적이 무엇인가?",
+      "2. 하나님께서 무슨 규칙을 우리에게 주시어 어떻게 자기를 영화롭게 하고 즐거워할 것을 지시하셨는가?",
+      "3. 성경이 제일 요긴하게 교훈하는 것이 무엇인가?",
+      "4. 하나님은 어떤 분이신가?",
+      "34. 양자로 삼는 것이 무엇인가?"
+    ];
+    
+    $( "#txtMessage" ).autocomplete({
+      source: availableTags
+    });
+    
+  } );
+  </script>
+
+    <!-- Speech To Text, Text To Speech, Ajax통신 -->
+	<script type="text/javascript" src="{% static 'chatapp/js/uiForChattingCatechismClient.js' %}"></script>
+
+     {% if initMessages %}
+			<script type="text/javascript">
+			botName = "Catechism chatbot"
+			{% for message in initMessages %}
+				processResponse("{{ message }}")
+			{% endfor %}
+			</script>
+     {% endif %}
+{% endblock javascript %}
+
+   
+        

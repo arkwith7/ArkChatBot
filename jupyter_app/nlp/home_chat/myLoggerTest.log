@@ -1,0 +1,65 @@
+[INFO|<ipython-input-1-e3953225126b>:31] 2018-03-10 22:03:28,136 > TEST START
+[WARNING|<ipython-input-1-e3953225126b>:32] 2018-03-10 22:03:28,145 > 스트림으로 로그가 남아요~
+[ERROR|<ipython-input-1-e3953225126b>:33] 2018-03-10 22:03:28,150 > 파일로도 남으니 안심이죠~!
+[CRITICAL|<ipython-input-1-e3953225126b>:34] 2018-03-10 22:03:28,154 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[INFO|<ipython-input-1-e3953225126b>:35] 2018-03-10 22:03:28,158 > TEST END!
+[INFO|<ipython-input-2-e3953225126b>:31] 2018-03-10 22:10:22,010 > TEST START
+[INFO|<ipython-input-2-e3953225126b>:31] 2018-03-10 22:10:22,010 > TEST START
+[WARNING|<ipython-input-2-e3953225126b>:32] 2018-03-10 22:10:22,014 > 스트림으로 로그가 남아요~
+[WARNING|<ipython-input-2-e3953225126b>:32] 2018-03-10 22:10:22,014 > 스트림으로 로그가 남아요~
+[ERROR|<ipython-input-2-e3953225126b>:33] 2018-03-10 22:10:22,018 > 파일로도 남으니 안심이죠~!
+[ERROR|<ipython-input-2-e3953225126b>:33] 2018-03-10 22:10:22,018 > 파일로도 남으니 안심이죠~!
+[CRITICAL|<ipython-input-2-e3953225126b>:34] 2018-03-10 22:10:22,021 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[CRITICAL|<ipython-input-2-e3953225126b>:34] 2018-03-10 22:10:22,021 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[INFO|<ipython-input-2-e3953225126b>:35] 2018-03-10 22:10:22,025 > TEST END!
+[INFO|<ipython-input-2-e3953225126b>:35] 2018-03-10 22:10:22,025 > TEST END!
+[INFO|<ipython-input-3-22a43e0bdf1b>:31] 2018-03-10 22:20:30,912 > TEST START
+[INFO|<ipython-input-3-22a43e0bdf1b>:31] 2018-03-10 22:20:30,912 > TEST START
+2018-03-10 22:20:30,912 - [INFO|<ipython-input-3-22a43e0bdf1b>:31] : TEST START
+[WARNING|<ipython-input-3-22a43e0bdf1b>:32] 2018-03-10 22:20:30,924 > 스트림으로 로그가 남아요~
+[WARNING|<ipython-input-3-22a43e0bdf1b>:32] 2018-03-10 22:20:30,924 > 스트림으로 로그가 남아요~
+2018-03-10 22:20:30,924 - [WARNING|<ipython-input-3-22a43e0bdf1b>:32] : 스트림으로 로그가 남아요~
+[ERROR|<ipython-input-3-22a43e0bdf1b>:33] 2018-03-10 22:20:30,928 > 파일로도 남으니 안심이죠~!
+[ERROR|<ipython-input-3-22a43e0bdf1b>:33] 2018-03-10 22:20:30,928 > 파일로도 남으니 안심이죠~!
+2018-03-10 22:20:30,928 - [ERROR|<ipython-input-3-22a43e0bdf1b>:33] : 파일로도 남으니 안심이죠~!
+[CRITICAL|<ipython-input-3-22a43e0bdf1b>:34] 2018-03-10 22:20:30,934 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[CRITICAL|<ipython-input-3-22a43e0bdf1b>:34] 2018-03-10 22:20:30,934 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:20:30,934 - [CRITICAL|<ipython-input-3-22a43e0bdf1b>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[INFO|<ipython-input-3-22a43e0bdf1b>:35] 2018-03-10 22:20:30,938 > TEST END!
+[INFO|<ipython-input-3-22a43e0bdf1b>:35] 2018-03-10 22:20:30,938 > TEST END!
+2018-03-10 22:20:30,938 - [INFO|<ipython-input-3-22a43e0bdf1b>:35] : TEST END!
+[INFO|<ipython-input-4-4f3c3083b0ba>:31] 2018-03-10 22:26:55,093 > TEST START
+[INFO|<ipython-input-4-4f3c3083b0ba>:31] 2018-03-10 22:26:55,093 > TEST START
+2018-03-10 22:26:55,093 - [INFO|<ipython-input-4-4f3c3083b0ba>:31] : TEST START
+2018-03-10 22:26:55,093 - [<ipython-input-4-4f3c3083b0ba>|<module>|INFO|<ipython-input-4-4f3c3083b0ba>:31] : TEST START
+[WARNING|<ipython-input-4-4f3c3083b0ba>:32] 2018-03-10 22:26:55,099 > 스트림으로 로그가 남아요~
+[WARNING|<ipython-input-4-4f3c3083b0ba>:32] 2018-03-10 22:26:55,099 > 스트림으로 로그가 남아요~
+2018-03-10 22:26:55,099 - [WARNING|<ipython-input-4-4f3c3083b0ba>:32] : 스트림으로 로그가 남아요~
+2018-03-10 22:26:55,099 - [<ipython-input-4-4f3c3083b0ba>|<module>|WARNING|<ipython-input-4-4f3c3083b0ba>:32] : 스트림으로 로그가 남아요~
+[ERROR|<ipython-input-4-4f3c3083b0ba>:33] 2018-03-10 22:26:55,112 > 파일로도 남으니 안심이죠~!
+[ERROR|<ipython-input-4-4f3c3083b0ba>:33] 2018-03-10 22:26:55,112 > 파일로도 남으니 안심이죠~!
+2018-03-10 22:26:55,112 - [ERROR|<ipython-input-4-4f3c3083b0ba>:33] : 파일로도 남으니 안심이죠~!
+2018-03-10 22:26:55,112 - [<ipython-input-4-4f3c3083b0ba>|<module>|ERROR|<ipython-input-4-4f3c3083b0ba>:33] : 파일로도 남으니 안심이죠~!
+[CRITICAL|<ipython-input-4-4f3c3083b0ba>:34] 2018-03-10 22:26:55,118 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[CRITICAL|<ipython-input-4-4f3c3083b0ba>:34] 2018-03-10 22:26:55,118 > 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:26:55,118 - [CRITICAL|<ipython-input-4-4f3c3083b0ba>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:26:55,118 - [<ipython-input-4-4f3c3083b0ba>|<module>|CRITICAL|<ipython-input-4-4f3c3083b0ba>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+[INFO|<ipython-input-4-4f3c3083b0ba>:35] 2018-03-10 22:26:55,127 > TEST END!
+[INFO|<ipython-input-4-4f3c3083b0ba>:35] 2018-03-10 22:26:55,127 > TEST END!
+2018-03-10 22:26:55,127 - [INFO|<ipython-input-4-4f3c3083b0ba>:35] : TEST END!
+2018-03-10 22:26:55,127 - [<ipython-input-4-4f3c3083b0ba>|<module>|INFO|<ipython-input-4-4f3c3083b0ba>:35] : TEST END!
+2018-03-10 22:27:14,968 - [<ipython-input-1-4f3c3083b0ba>|<module>|INFO|<ipython-input-1-4f3c3083b0ba>:31] : TEST START
+2018-03-10 22:27:14,977 - [<ipython-input-1-4f3c3083b0ba>|<module>|WARNING|<ipython-input-1-4f3c3083b0ba>:32] : 스트림으로 로그가 남아요~
+2018-03-10 22:27:14,979 - [<ipython-input-1-4f3c3083b0ba>|<module>|ERROR|<ipython-input-1-4f3c3083b0ba>:33] : 파일로도 남으니 안심이죠~!
+2018-03-10 22:27:14,980 - [<ipython-input-1-4f3c3083b0ba>|<module>|CRITICAL|<ipython-input-1-4f3c3083b0ba>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:27:14,986 - [<ipython-input-1-4f3c3083b0ba>|<module>|INFO|<ipython-input-1-4f3c3083b0ba>:35] : TEST END!
+2018-03-10 22:28:12,607 - [<ipython-input-2-4f3c3083b0ba>|<module>|INFO|<ipython-input-2-4f3c3083b0ba>:31] : TEST START
+2018-03-10 22:28:12,607 - [<ipython-input-2-4f3c3083b0ba>|<module>|INFO|<ipython-input-2-4f3c3083b0ba>:31] : TEST START
+2018-03-10 22:28:12,610 - [<ipython-input-2-4f3c3083b0ba>|<module>|WARNING|<ipython-input-2-4f3c3083b0ba>:32] : 스트림으로 로그가 남아요~
+2018-03-10 22:28:12,610 - [<ipython-input-2-4f3c3083b0ba>|<module>|WARNING|<ipython-input-2-4f3c3083b0ba>:32] : 스트림으로 로그가 남아요~
+2018-03-10 22:28:12,613 - [<ipython-input-2-4f3c3083b0ba>|<module>|ERROR|<ipython-input-2-4f3c3083b0ba>:33] : 파일로도 남으니 안심이죠~!
+2018-03-10 22:28:12,613 - [<ipython-input-2-4f3c3083b0ba>|<module>|ERROR|<ipython-input-2-4f3c3083b0ba>:33] : 파일로도 남으니 안심이죠~!
+2018-03-10 22:28:12,616 - [<ipython-input-2-4f3c3083b0ba>|<module>|CRITICAL|<ipython-input-2-4f3c3083b0ba>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:28:12,616 - [<ipython-input-2-4f3c3083b0ba>|<module>|CRITICAL|<ipython-input-2-4f3c3083b0ba>:34] : 치명적인 버그는 꼭 파일로 남기기도 하고 메일로 발송하세요!
+2018-03-10 22:28:12,621 - [<ipython-input-2-4f3c3083b0ba>|<module>|INFO|<ipython-input-2-4f3c3083b0ba>:35] : TEST END!
+2018-03-10 22:28:12,621 - [<ipython-input-2-4f3c3083b0ba>|<module>|INFO|<ipython-input-2-4f3c3083b0ba>:35] : TEST END!

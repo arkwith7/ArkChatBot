@@ -1,0 +1,97 @@
+{% extends "chatapp/base_contents_kr.html" %}
+{% load staticfiles %}
+
+{% block title %}Introduce arkwith chatbot service{% endblock %}
+
+{% block content %}
+<!-- Container (Introduce Arkwith Chatbot) -->
+	<div id="introduce" class="container-fluid">
+      <h2>아크위드 챗봇</h2><br>
+      <h4>서비스 소개</h4>
+      <p>챗봇은 사람과의 문자 대화를 통해 질문에 알맞은 답이나 각종 연관 정보를 제공하는 ‘인공지능(AI) 기반의 커뮤니케이션 소프트웨어’  라고 정의 될 수 있다. 일반적으로 사람들이 기대하는 챗봇은 사람이 아무 말이나 걸면 거기에 부합하는 대답을 하기를 기대한다. 이런 한 대화 방식을 사람 주도의 열린 대화라고 하며 대표적인 사례로 마이크로소프트의 죠(Zo)가 있다. 그러나 상용 비즈니스에는 이러한 방식이 적용되기 어렵다. 대부분의 기업은 비즈니스 목적상 대답 해야 할 답이 미리 준비 되어 있고 그러한 답변을 하기위한 사용자 질문에 대해 이해를 잘 하는 방법에 대하여 많은 관심을 가지고 있다. 아크위드 챗봇은 이와 같은 요구에 부응하여 특정 목적 또는 문제 해결을 위한 고객 사용자를 대상으로 질문에 정확한 답변을 제공하기 위하여 시스템 주도의 닫힌대화 방식의 챗봇 서비스를 제공한다. </p>
+	  <br>
+      <h4>서비스 방법 및 절차</h4>
+      <p>아크위드 챗봇 서비스는 다음과 같은 절차로 진행 되며 예시적인 참조 자료입니다</p>
+		<div class="timeline">
+		  <div class="timeline_container tc_left">
+		    <div class="timeline_content">
+		      <h4>서비스 준비-서비스요청자(고객)</h4>
+		      <p>대화자료 준비</p>
+				<ul>
+				  <li>대화의도(대화분류)</li>
+				  <li>질문과 답변의 말뭉치</li>
+				  <li>홈페이지 기술환경 정의서</li>
+				</ul>  
+		      <p>챗봇 서비스 문의 및 요청</p>
+		
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_right">
+		    <div class="timeline_content">
+		      <h4>서비스 준비-서비스제공자(아크위드)</h4>
+		      <p>서비스 요청사항 검토 및 의견제시</p>
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_right">
+		    <div class="timeline_content">
+		      <h4>서비스 구축-서비스제공자(아크위드)</h4>
+		      <p>대화자료 처리 및 개발</p>
+				<ul>
+				  <li>대화자료 자연어처리/머신러닝</li>
+				  <li>챗봇 클라이언트 개발</li>
+				  <li>클라우드 챗봇 서버 개발</li>
+				  <li>단위/통합 테스트</li>
+				  <li>서비스 준비</li>
+				</ul>  
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_left">
+		    <div class="timeline_content">
+		      <h4>서비스 구축-서비스요청자(고객)</h4>
+		      <p>사용자/시스템 테스트</p>
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_right">
+		    <div class="timeline_content">
+		      <h4>서비스 구축-서비스제공자(아크위드)</h4>
+		      <p>테스트결과반영/서비스 오픈 준비</p>
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_left">
+		    <div class="timeline_content">
+		      <h4>서비스 실시-서비스요청자(고객)</h4>
+		      <p>서비스 오픈</p>
+				<ul>
+				  <li>사용자 반응 모니터링</li>
+				  <li>고객의 소리 분석 모니터링</li>
+				</ul>  
+		    </div>
+		  </div>
+		  <div class="timeline_container tc_right">
+		    <div class="timeline_content">
+		      <h4>서비스 실시-서비스제공자(아크위드)</h4>
+		      <p>챗봇 서비스 유지보수</p>
+		    </div>
+		  </div>
+		</div>
+	  
+	  <br>
+      <h4>기대효과</h4>
+      <p></p>
+	  <ol>
+	    <li>고객의 제품 서비스에 대한 정보요구에 편의성 및 민첩성 제공</li>
+	    <li>제품 서비스에 대한 고객 사용자 경험 향상</li>
+	    <li>고객의 소리 빅데이터 분석/데이터 마이닝 기반 구축</li>
+	  </ol> 
+      
+
+	</div>
+
+{% endblock content %}
+
+
+{% block javascript %}
+{% endblock javascript %}
+
+   
+        

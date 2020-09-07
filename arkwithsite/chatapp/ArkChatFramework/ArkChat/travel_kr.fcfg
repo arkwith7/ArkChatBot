@@ -1,0 +1,39 @@
+% start USR
+
+
+# IBIS / domain-independent
+
+USR[sem=?s] -> ANSWER[sem=?s] | ASK[sem=?s]
+
+ASK[sem=[Ask=?q]] -> WHQ[q=?q]
+
+ANSWER[sem=[Answer=?ans]] -> SHORTANS[ans=?ans] | YESNOANS[ans=?ans]
+
+SHORTANS[ans=?ind] -> CAT[cat=?cat, ind=?ind]
+#SHORTANS[ans=[pred=?cat, ind=?ind]] -> CAT[cat=?cat, ind=?ind]
+
+YESNOANS[ans=yes] -> '예' | '그렇습니다' | '응' | '그래'
+YESNOANS[ans=no] -> '아니오' | '아닙니다' | '아니' 
+
+
+# travel
+
+WHQ[q=price] -> '가격문의'
+
+CAT[cat=how, ind=plane] -> '비행기' | '항공기'
+CAT[cat=how, ind=train] -> '기차'
+CAT[cat=how, ind=bus] -> '버스'
+
+CAT[cat=city, ind=seoul] -> '서울'
+CAT[cat=city, ind=pusan]  -> '부산'
+CAT[cat=city, ind=daegu] -> '대구'
+CAT[cat=city, ind=gwangju] -> '광주'
+CAT[cat=city, ind=Gangneung] -> '강릉'
+CAT[cat=city, ind=jeju] -> '제주'
+
+CAT[cat=class, ind=first]  -> '우등석' | '일등석'
+CAT[cat=class, ind=second] -> '일반석' | '보통석'
+
+CAT[cat=day, ind=today]    -> '오늘'
+CAT[cat=day, ind=tomorrow] -> '내일'
+

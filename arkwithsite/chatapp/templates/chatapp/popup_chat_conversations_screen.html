@@ -1,0 +1,45 @@
+{% extends "chatapp/base_popup_contents_kr.html" %}
+{% load staticfiles %}
+
+{% block title %}Chatting Conversations Page {% endblock %}
+
+{% block content %}
+
+    {% include "chatapp/chat-panel.html" %}
+
+{% endblock content %}
+
+
+{% block javascript %}
+    <!-- Speech To Text, Text To Speech, Ajax통신 -->
+	<script type="text/javascript" src="{% static 'chatapp/js/uiForChattingConversationsClient.js' %}"></script>
+
+     {% if initMessages %}
+			<script type="text/javascript">
+			botName = "arkwith chatbot"
+			{% for message in initMessages %}
+				processResponse("{{ message }}")
+			{% endfor %}
+			</script>
+     {% endif %}
+     
+     <script>
+		$( function() {
+    		var availableTags = [
+    		      "안녕하세요",
+    		      "안녕히 계셔요.",
+    		      "감사합니다"
+			];
+			
+			$( "#txtMessage" ).autocomplete({
+      			source: availableTags
+			});
+		
+		} );
+     </script>
+
+     
+{% endblock javascript %}
+
+   
+        

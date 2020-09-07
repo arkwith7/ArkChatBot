@@ -1,0 +1,47 @@
+﻿윈도우10에서 텐서플로우(TensorFlow)설치
+
+Anaconda가 설치된 경우를 전제로 Anaconda 환경(environment)에 설치하는 방법을 설명한다.
+
+1. 먼저 다음 명령을 이용 conda 환경(environment)의 이름을 tensorflow라는 이름으로 환경을 생성한다.
+
+C:> conda create -n tensorflow pip python=3.5 
+
+2. 다음으로 conda 환경(environment)의 이름이 tensorflow라는 것을 활성화(Activate)하는 명령을 실행한다.
+
+C:> activate tensorflow
+
+그러면 아래와 같이 명령 프롬프트가 변경된다.
+
+ (tensorflow)C:>  # Your prompt should change 
+그런다음 TensorFlow를 설치하기 위해서 위에성 생성하고 활성화한 conda 환경(environment)하에서 필요한 명령어를 실행한다.
+
+3. TensorFlow의 CPU버젼(CPU-only version)을 설치하기 위해 다음 명령어를 실행한다.
+
+(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow 
+
+4. TensorFlow의 GPU버젼을 설치하기 위해 다음 명령어를 실행한다.
+
+(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow-gpu 
+
+5. 주피터 노트북을 사용하기 위해 IPython, Jupyter notebook을 설치한다.
+
+(tensorflow)C:> pip install ipython 
+(tensorflow)C:> pip install jupyter notebook 
+
+6. 추가적으로 아나콘다의 텐서플로우 환경에 필요한 파이썬 패키지들을 차례로 설치한다.
+
+(tensorflow)C:> pip install nltk
+(tensorflow)C:> pip install tflearn
+(tensorflow)C:> pip install h5py
+(tensorflow)C:> pip install Scipy
+
+conda install ujson
+pip install requests
+pip install bs4
+pip install lxml
+pip install JPype1-0.6.2-cp35-cp35m-win_amd64.whl
+pip install konlpy
+
+
+등...
+
