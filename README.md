@@ -66,8 +66,8 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.
 새로 만들기를 클릭한 후, 다음 경로를 입력합니다. 
 ```
 C:\Program Files\Java\jdk1.8.0_231\bin
-### 3.4 CMD(Windows Comand)에서 자바 버전을 확인 해보자.
 ```
+### 3.4 CMD(Windows Comand)에서 자바 버전을 확인 해보자.
 ```
 c:\Users\saint\ChatBot>java -version
 java version "1.8.0_261"
