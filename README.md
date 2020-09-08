@@ -9,6 +9,7 @@ Python Django, JQuery, NLP(konlpy, Tensorflow)를 활용한 것으로,
 https://repo.continuum.io/archive/ 에 접속 후 시스템환경에 맞는 버전의 Anaconda3을 다운로드합니다.
 
 **Anaconda3-5.0.0-Windows-x86_64.exe**	510.0M	2017-09-26 14:14:53	fee3fad608d0006afa5c7bca4de3d02b
+
 CMD(Windows Comand)에서 Python 버전을 확인 해보자.
 ```
 C:\Users\"윈도우 로그인 사용자명"\ChatBot>python --version
