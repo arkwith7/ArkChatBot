@@ -75,14 +75,70 @@ Java(TM) SE Runtime Environment (build 1.8.0_261-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
 ```
 
-## 4. TensorFlow 설치
+## 4. Python 가상환경 생성
+### 4.1. 가상환경을 설치할 디렉토리로 이동
+```
+C:\Users\"윈도우 로그인 사용자명">cd ChatBot
+```
+### 4.2. virtualenv 설치
+파이썬 가상환경을 설치하기 위해 virtualenv이용 한다
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>virtualenv --version
+'virtualenv'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+```
+이상과 같이 **virtualenv**가 설치되지 않았다면
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>pip install virtualenv
+Collecting virtualenv
+........
+```
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>virtualenv --version
+virtualenv 20.0.31 from c:\users\saint\anaconda3\lib\site-packages\virtualenv\__init__.py
+```
+### 4.3. chat_env 가상환경 생성
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>virtualenv chat_env
+.......
+```
+### 4.4. conda명령어로 chat_env 가상환경 생성
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>conda create -n chat_env python=3.6
+```
+생성한 가상환경을 활성화 한다
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>activate chat_env
+
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>
+
+```
+생성한 가상환경에서 빠져 나간다.
+```
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>deactivate
+
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>
+
+```
+아나콘다 **conda** 명령어로 생성된 가상환경 목록을 조회한다. 
+```
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>conda info --envs
+# conda environments:
+#
+chat_env                 C:\Users\saint\Anaconda3\envs\chat_env
+root                  *  C:\Users\saint\Anaconda3
+```
+가상환경을 제거 할 경우에는 
+conda remove --name chat_env --all
+
+## 5. TensorFlow 설치
 주의 : 최신버전이 아니라 자신의 컴퓨터 환경에 맞는 버젼을 설치하는것이 중요함
 - 본인의 GPU 사양 확인하기 > Compute Capability 확인(Compute Capability 3.5 이상의 NVIDIA® GPU 카드만 지원)
 - Tensorflow 1.x 버전에서는 GPU를 사용하려면 CUDA 10.0을 지원, Tensorflow 2.x 버전에서는 10.1
 
 OS: Windows 10
 그래픽카드: NVIDIA GeForce GTX 1050
-### 4.1. 텐서플로우(TensorFlow) 설치
+### 5.1. 텐서플로우(TensorFlow) 설치
 설치가이드 : https://teddylee777.github.io/colab/tensorflow-gpu-install-windows
 pip 명령어를 통해 텐서플로우를 설치합니다.
 TensorFlow 1.x 버전 설치
@@ -91,7 +147,7 @@ pip install tensorflow==1.14.0
 #pip install tensorflow-gpu==1.15.0
 ```
 
-### 4.2. NVIDIA GPU 드라이버 설치
+### 5.2. NVIDIA GPU 드라이버 설치
 NVIDIA GPU 드라이버 설치 링크 : https://www.nvidia.com/download/index.aspx?lang=kr
 
 제품 유형, 시리즈, 계열: 자신의 그래픽 카드 정보를 선택합니다.
@@ -127,12 +183,12 @@ Thu Sep 03 15:59:32 2020
 |  No running processes found                                                                 |
 +------------------------------------------------------------------------------------------+
 ```
-### 4.3. CUDA Toolkit 다운로드 및 설치
+### 5.3. CUDA Toolkit 다운로드 및 설치
 CUDA Toolkit 다운로드 링크 : https://developer.nvidia.com/cuda-toolkit-archive
 위 링크에서 자신이 맞는 버전의 CUDA Toolkit을 다운로드 합니다.
 TensorFlow1.x 는 CUDA 10.0을 지원합니다. 따라서, CUDA 10. 0의 CUDA Toolkit 을 다운로드 받아 줍니다.
 
-### 4.4. cuDNN SDK 설치
+### 5.4. cuDNN SDK 설치
 cuDNN SDK 다운로드 링크 : https://developer.nvidia.com/cudnn
 Download cuDNN을 눌러 Download 받습니다.
 멤버십이 요구 되므로, 회원가입을 안하신 분들은 회원가입 후 로그인을 진행합니다.
@@ -141,7 +197,7 @@ Download cuDNN을 눌러 Download 받습니다.
 Download cuDNN v7.6.5 (November 5th, 2019), for CUDA 10.0
 cuDNN Library for Windows 10
 
-### 4.5 환경 변수에서 CUDA_PATH 확인
+### 5.5 환경 변수에서 CUDA_PATH 확인
 (기본 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0)
 
 CUDA toolkit 버전에 맞는 cuDNN 라이브러리 다운로드 및 압축풀기 (Download cuDNN v7.6.2 (July 22, 2019), for CUDA 10.0)
@@ -156,15 +212,15 @@ path를 누르고 편집을 누릅니다.
     SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%PATH%
 ```
 
-### 4.6 설치 확인
+### 5.6 설치 확인
 ```
 C:\Users\saint\ChatBot>python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 2020-09-03 16:02:38.158098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
 Tensor("Sum:0", shape=(), dtype=float32)
 ```
 
-## 5. KoNLpy 설치 
-### 5.1 JDK 설치여부 확인
+## 6. KoNLpy 설치 
+### 6.1 JDK 설치여부 확인
 우선 JDK를 1.7 버전 이상으로 설치해야 합니다.
 ```
 C:\Users\saint\ChatBot>java -version
@@ -173,7 +229,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_261-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
 ```
 
-### 5.2 JDK 환경 변수 확인
+### 6.2 JDK 환경 변수 확인
 ```
 C:\Users\saint\ChatBot>echo %JAVA_HOME%
 ```
@@ -187,7 +243,7 @@ JAVA_HOME이 없다면 윈도우 환경 변수에 추가해야하기 때문입�
 제어판 > 시스템 및 보안 > 시스템 > 고급 시스템 설정 > 고급 > 환경 변수
 새로 만들기(N)...를 누르고 JAVA_HOME이라는 환경 변수를 만듭니다. 환경 변수의 값은 앞서 찾았던 jdk 설치 경로입니다.
 
-### 5.3 JPype 설치
+### 6.3 JPype 설치
 이제 JAVA와 Python을 연결해주는 역할을 하는 JPype를 설치해야 합니다.
 
 설치 주소 : https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype
@@ -205,14 +261,14 @@ pip install JPype1-0.7.1-cp36-cp36m-win_amd64.whl
 ```
 이제 JPype의 설치가 완료되었다면, KoNLpy를 사용할 준비가 되었습니다.
 
-### 5.4 Konlpy 설치
+### 6.4 Konlpy 설치
 ```
 pip install konlpy
 ```
 
-## 6. 주피터 노트북 설치
+## 7. 주피터 노트북 설치
 - 주피터 노트북을 가상환경에서도 이용 할 수 있도록 설치
-### 6.1. 가상환경에서 jupyter notebook 설치
+### 7.1. 가상환경에서 jupyter notebook 설치
 ```
 pip install ipykernel
 (chat_env) C:\Users\saint\ChatBot>pip install ipykernel
@@ -220,21 +276,21 @@ Collecting ipykernel
  .....
 ```
 
-### 6.2. jupyter notebook에 가상환경 kernel 추가
+### 7.2. jupyter notebook에 가상환경 kernel 추가
 ```
 python -m ipykernel install --user --name chat_env --display-name "ChatApp_env"
 (chat_env) C:\Users\saint\ChatBot>python -m ipykernel install --user --name chat_env --display-name "ChatApp_env"
 Installed kernelspec chat_env in C:\Users\saint\AppData\Roaming\jupyter\kernels\chat_env
 ```
 
-### 6.3. jupyter notebook실행 
+### 7.3. jupyter notebook실행 
 ```
 (chat_env) C:\Users\saint\ChatBot>jupyter notebook
 [I 17:12:01.042 NotebookApp] Writing notebook server cookie secret to C:\Users\saint\AppData\Roaming\jupyter\runtime\notebook_cookie_secret
 .......
 ```
 
-### 6.4. 브라우져에 활성화된 Jupyter에서 New --> ChatApp_env 선택하여 새로운 창 열고 아래 코드 입력으로 CUDA와 PyTorch정상 설치 여부 확인
+### 7.4. 브라우져에 활성화된 Jupyter에서 New --> ChatApp_env 선택하여 새로운 창 열고 아래 코드 입력으로 CUDA와 PyTorch정상 설치 여부 확인
 
 ```
 import tensorflow as tf
@@ -246,8 +302,8 @@ print(tf.reduce_sum(tf.random.normal([1000, 1000])))
 Tensor("Sum_1:0", shape=(), dtype=float32)
 ```
 
-## 7. Chatting Application을 위한 Python Package 설치
-### 7.1 pip 설치
+## 8. Chatting Application을 위한 Python Package 설치
+### 8.1 pip로 필요 파이선 패키지 설치
 ```
 pip install -r requirements.txt
 ```
@@ -256,11 +312,12 @@ pip install -r requirements.txt
 C:\Users\saint\ChatBot>pip install -r requirements.txt
 ```
 
-### 7.2 NLTK 설치하고 Data 다운로드
+### 8.2 NLTK 설치하고 Data 다운로드
 ```
 nltk.download()
 ```
 
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>python
 ```
 C:\Users\saint\ChatBot>python
 Python 3.6.2 |Anaconda, Inc.| (default, Sep 19 2017, 08:03:39) [MSC v.1900 64 bit (AMD64)] on win32
