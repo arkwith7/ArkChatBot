@@ -10,7 +10,7 @@ https://repo.continuum.io/archive/ 에 접속 후 시스템환경에 맞는 버�
 Anaconda3-5.0.0-Windows-x86_64.exe	510.0M	2017-09-26 14:14:53	fee3fad608d0006afa5c7bca4de3d02b
 CMD(Windows Comand)에서 Python 버전을 확인 해보자.
 ```
-C:\Users\saint\ChatBot>python --version
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>python --version
 Python 3.6.2 :: Anaconda, Inc.
 ```
 
@@ -20,21 +20,21 @@ https://git-scm.com/
 
 ### 2.2 CMD(Windows Comand)에서 깃 버전을 확인 해보자.
 ```
-C:\Users\saint\ChatBot>git --version
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>git --version
 git version 2.28.0.windows.1
 ```
 
 ### 2.3 사용자 등록
 ```
-C:\Users\saint\ChatBot>git config --global user.name "arkwith7"
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>git config --global user.name "arkwith7"
 ```
 ```
-C:\Users\saint\ChatBot>git config --global user.email "arkwith7@gmail.com"
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>git config --global user.email "arkwith7@gmail.com"
 ```
 
 ### 2.4 확인
 ```
-C:\Users\saint\ChatBot>git config --list
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>git config --list
 diff.astextplain.textconv=astextplain
 filter.lfs.clean=git-lfs clean -- %f
 filter.lfs.smudge=git-lfs smudge -- %f
@@ -69,7 +69,7 @@ C:\Program Files\Java\jdk1.8.0_231\bin
 ```
 ### 3.4 CMD(Windows Comand)에서 자바 버전을 확인 해보자.
 ```
-c:\Users\saint\ChatBot>java -version
+c:\Users\"윈도우 로그인 사용자명"\ChatBot>java -version
 java version "1.8.0_261"
 Java(TM) SE Runtime Environment (build 1.8.0_261-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
@@ -163,7 +163,7 @@ Window + R을 누르고 “cmd” 타입 후 터미널로 진입합니다.
 nvidia-smi
 명령어를 입력하여, 정상적으로 NVidia 그래픽 드라이버가 설치 되었는지 확인합니다.
 ```
-C:\Users\saint\ChatBot>nvidia-smi
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>nvidia-smi
 Thu Sep 03 15:59:32 2020
 +----------------------------------------------------------------------------------+
 | NVIDIA-SMI 452.06       Driver Version: 452.06       CUDA Version: 11.0          |
@@ -214,7 +214,7 @@ path를 누르고 편집을 누릅니다.
 
 ### 5.6 설치 확인
 ```
-C:\Users\saint\ChatBot>python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 2020-09-03 16:02:38.158098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
 Tensor("Sum:0", shape=(), dtype=float32)
 ```
@@ -223,7 +223,7 @@ Tensor("Sum:0", shape=(), dtype=float32)
 ### 6.1 JDK 설치여부 확인
 우선 JDK를 1.7 버전 이상으로 설치해야 합니다.
 ```
-C:\Users\saint\ChatBot>java -version
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>java -version
 java version "1.8.0_261"
 Java(TM) SE Runtime Environment (build 1.8.0_261-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
@@ -231,7 +231,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
 
 ### 6.2 JDK 환경 변수 확인
 ```
-C:\Users\saint\ChatBot>echo %JAVA_HOME%
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>echo %JAVA_HOME%
 ```
 ```
 C:\Program Files\Java\jdk1.8.0_261
@@ -271,7 +271,7 @@ pip install konlpy
 ### 7.1. 가상환경에서 jupyter notebook 설치
 ```
 pip install ipykernel
-(chat_env) C:\Users\saint\ChatBot>pip install ipykernel
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>pip install ipykernel
 Collecting ipykernel
  .....
 ```
@@ -279,13 +279,13 @@ Collecting ipykernel
 ### 7.2. jupyter notebook에 가상환경 kernel 추가
 ```
 python -m ipykernel install --user --name chat_env --display-name "ChatApp_env"
-(chat_env) C:\Users\saint\ChatBot>python -m ipykernel install --user --name chat_env --display-name "ChatApp_env"
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>python -m ipykernel install --user --name chat_env --display-name "ChatApp_env"
 Installed kernelspec chat_env in C:\Users\saint\AppData\Roaming\jupyter\kernels\chat_env
 ```
 
 ### 7.3. jupyter notebook실행 
 ```
-(chat_env) C:\Users\saint\ChatBot>jupyter notebook
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>jupyter notebook
 [I 17:12:01.042 NotebookApp] Writing notebook server cookie secret to C:\Users\saint\AppData\Roaming\jupyter\runtime\notebook_cookie_secret
 .......
 ```
@@ -309,7 +309,7 @@ pip install -r requirements.txt
 ```
 
 ```
-C:\Users\saint\ChatBot>pip install -r requirements.txt
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>pip install -r requirements.txt
 ```
 
 ### 8.2 NLTK 설치하고 Data 다운로드
@@ -319,7 +319,7 @@ nltk.download()
 
 C:\Users\"윈도우 로그인 사용자명"\ChatBot>python
 ```
-C:\Users\saint\ChatBot>python
+C:\Users\"윈도우 로그인 사용자명"\ChatBot>python
 Python 3.6.2 |Anaconda, Inc.| (default, Sep 19 2017, 08:03:39) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import nltk
@@ -330,9 +330,11 @@ True
 
 ### 7.3 NLTK Data 다운로드 디렉토리로 대화 grammars파일 복사
 ```
-C:\Users\saint\AppData\Roaming\nltk_data
-~\arkwithsite\chatapp\ArkChatFramework\ArkChat\ 디렉토리에 있는 travel_kr.fcfg 파일을 
-C:\Users\saint\AppData\Roaming\nltk_data\grammars\ 디렉토리로 복사
+C:\Users\"윈도우 로그인 사용자명"\AppData\Roaming\nltk_data
+```
+~\arkwithsite\chatapp\ArkChatFramework\ArkChat\ 디렉토리에 있는 **travel_kr.fcfg** 파일을 
+```
+C:\Users\"윈도우 로그인 사용자명"\AppData\Roaming\nltk_data\grammars\ 디렉토리로 복사
 ```
 
 ## 8. 케라스 설치(생략)
@@ -342,7 +344,7 @@ git clone https://github.com/fchollet/keras.git
 ```
 
 ```
-(chat_env) C:\Users\saint\ChatBot>git clone https://github.com/fchollet/keras.git
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>git clone https://github.com/fchollet/keras.git
 Cloning into 'keras'...
 remote: Enumerating objects: 33256, done.
 remote: Total 33256 (delta 0), reused 0 (delta 0), pack-reused 33256 eceiving objects: 100% (33256/33256), 11.10 MiB | 5.44 MiB/s
@@ -357,9 +359,9 @@ python setup.py install
 ```
 
 ```
-(chat_env) C:\Users\saint\ChatBot>cd keras
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>cd keras
 
-(chat_env) C:\Users\saint\ChatBot\keras>python setup.py install
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot\keras>python setup.py install
 running install
 running bdist_egg
 running egg_info
@@ -369,8 +371,8 @@ creating Keras.egg-info
 
 ### 8.3 tensorflow 1.15와 호환되게 하기위해 다운그레이드
 ```
-(chat_env) C:\Users\saint\ChatBot>cd ..
-(chat_env) C:\Users\saint\ChatBot>pip install keras==2.2.5
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>cd ..
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>pip install keras==2.2.5
 Collecting keras==2.2.5
 ...........
 ```
@@ -379,9 +381,9 @@ Collecting keras==2.2.5
 ## 9. Chat App 실행
 Django웹 프로젝트인 arkwithsite로 이동하여 python manage.py runserver 실행
 ```
-(chat_env) C:\Users\saint\ChatBot>cd arkwithsite
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot>cd arkwithsite
 
-(chat_env) C:\Users\saint\ChatBot\arkwithsite>python manage.py runserver
+(chat_env) C:\Users\"윈도우 로그인 사용자명"\ChatBot\arkwithsite>python manage.py runserver
 ```
 
 
