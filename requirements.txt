@@ -21,3 +21,33 @@ ujson
 tqdm
 wordcloud
 gensim
+numpy 
+matplotlib 
+pandas 
+pydotplus 
+h5py 
+scikit-learn
+scipy 
+libpython
+ujson
+seaborn
+pydot
+tqdm
+wordcloud
+gensim
+nltk
+wikiextractor
+seqeval
+konlpy
+ipykernel
+jupyter
+tensorflow
+keras
+keras-crf
+sentencepiece
+tokenizers
+tensorflow_datasets
+transformers
+sentence_transformers
+# PyTorch BERT모델을 위해 파이토치 설치
+# pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
