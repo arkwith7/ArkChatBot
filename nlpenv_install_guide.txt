@@ -1,0 +1,56 @@
+## 나눔 글꼴 설치
+apt-get 명령으로 나눔글꼴(fonts-nanum)을 설치하고, fc-cache 명령으로 폰트 캐시 삭제
+
+$ sudo apt-get install fonts-nanum*
+$ sudo fc-cache -fv
+
+## 파이썬 가상환경 구성
+diquest@DESKTOP-41K4BMT:~$ conda activate
+(base) diquest@DESKTOP-41K4BMT:~$ cd /mnt/c/PJT/000NLP/
+(base) diquest@DESKTOP-41K4BMT:/mnt/c/PJT/000NLP$ python -m venv nlp_env
+
+## 가상환경 활성화
+(base) diquest@DESKTOP-41K4BMT:/mnt/c/PJT/000NLP$ source ./nlp_env/bin/activate
+(nlp_env) (base) diquest@DESKTOP-41K4BMT:/mnt/c/PJT/000NLP$
+
+## 파이썬 패키지 설치
+(nlp_env) (base) diquest@DESKTOP-41K4BMT:/mnt/c/PJT/000NLP$ pip install -r requirement.txt
+
+## 주피터노트북 커널설치
+(nlp_env) (base) diquest@DESKTOP-41K4BMT:/mnt/c/PJT/000NLP$ python -m ipykernel install --user --name nlp_env --display-name "nlp"
+Installed kernelspec nlp_env in /home/diquest/.local/share/jupyter/kernels/nlp_env
+
+## 주피터노트북 실행시 기본 브라우져 자동실행 안되는 오류 수정
+1. jupyter notebook --no-browser 로 실행시 접속 URL 나오면서 오류 해결
+2. jupyter notebook --generate-config 실행후 /home/diquest/.jupyter/jupyter_notebook_config.py를 찾아서 열고
+   #c.NotebookApp.open_browser=True 를 찾아 #을 지우고 c.NotebookApp.open_browser=False로 변경 저장
+
+## 주피터 노트북 기본 포인인 8888 이외의 8889 포트로 실행방법
+jupyter notebook --port=8889
+   
+## matplotlib 에 한글 글꼴
+sudo cp /usr/share/fonts/truetype/nanum/Nanum* /mnt/c/PJT/000NLP/nlp_env/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/
+rm -rf /home/diquest/.cache/matplotlib/*
+
+## Mecab등 소스로부터 빌드시 C컴파일 환경 구성
+sudo apt-get install build-essential
+
+## Mecab 소스로부터 빌드 설치1
+https://vhrehfdl.tistory.com/m/129
+
+## Mecab 소스로부터 빌드 설치2
+https://m.blog.naver.com/varkiry05/221682219392
+
+## 형태소분석기 Mecab 설치 참조 자료
+https://coder-question-ko.com/cq-ko-blog/11586
+
+1. $ sudo apt install mecab
+2. $ echo "すもももももももものうち" | mecab
+3. $ pip install mecab-python3
+4. error message: [ifs] no such file or directory: /usr/local/etc/mecabrc 에러 발생시
+조치1
+# オプションで指定
+tagger = MeCab.Tagger('-r /etc/mecabrc')
+조치2 -> .bashrc에 환경변수 추가
+# 環境変数でも指定できる
+export MECABRC="/etc/mecabrc"
