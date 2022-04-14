@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "chat_env\\Scripts\\python.exe"
+    "python.pythonPath": "chat_env\\Scripts\\python.exe",
+    "jupyter.jupyterServerType": "local"
 }

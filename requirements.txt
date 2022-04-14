@@ -23,7 +23,8 @@ wordcloud
 gensim
 numpy 
 matplotlib 
-pandas 
+pandas
+openpyxl
 pydotplus 
 h5py 
 scikit-learn
@@ -51,3 +52,5 @@ transformers
 sentence_transformers
 # PyTorch BERT모델을 위해 파이토치 설치
 # pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+# 깃허브에서 KoBERT 파일 로드
+# pip install git+https://git@github.com/SKTBrain/KoBERT.git@master
